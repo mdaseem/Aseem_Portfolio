@@ -1,10 +1,14 @@
 import React from "react";
 import "./Main.css";
 
-const Main: React.FC = () => {
+interface MainProps {
+  children: React.ReactNode;
+}
+
+const Main: React.FC<MainProps> = (props) => {
   return (
     <div>
-      <main className="main-content">This is my portfolio</main>
+      <main className="main-content">{props.children}</main>
     </div>
   );
 };

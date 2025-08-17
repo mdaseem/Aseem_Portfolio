@@ -1,0 +1,11 @@
+.project-container-main-content {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+@media (max-width: 767px) {
+  .project-container-main-content {
+    flex-wrap: wrap;
+  }
+}

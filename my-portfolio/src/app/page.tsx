@@ -1,14 +1,16 @@
 import React from "react";
-import DynamicHoc from "./components/DynamicHoc/DynamicHoc";
-import Header from "./components/Header/Header";
-import Menu from "./components/Menu/Menu";
+import Header from "./components/Atoms/Header/Header";
+import Menu from "./components/Atoms/Menu/Menu";
+import Main from "./components/Main/Main";
 
 export default function ThisIsPortfolioHome() {
   return (
     <div className="page-view">
       <Menu />
       <Header />
-      <DynamicHoc />
+      <Main>
+        <p>This is my portfolio</p>
+      </Main>
     </div>
   );
 }
