@@ -1,11 +1,12 @@
 'use client';
+
 import React, { useEffect, useRef, useState, ReactNode } from 'react';
 import './FadeIn.css';
 
 interface FadeInProps {
   children: ReactNode;
   className?: string;
-  delay?: string; // e.g., '0.5s'
+  delay?: string;
 }
 
 const FadeIn: React.FC<FadeInProps> = ({ children, className = '', delay = '0.8s' }) => {
@@ -17,18 +18,20 @@ const FadeIn: React.FC<FadeInProps> = ({ children, className = '', delay = '0.8s
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          if (ref.current) observer.unobserve(ref.current); // stop observing after it becomes visible
+        } else {
+          setIsVisible(false); // Reset when it goes out of view
         }
       },
       { threshold: 0.1 }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    const el = ref.current;
+    if (el) {
+      observer.observe(el);
     }
 
     return () => {
-      observer.disconnect();
+      if (el) observer.unobserve(el);
     };
   }, []);
 
