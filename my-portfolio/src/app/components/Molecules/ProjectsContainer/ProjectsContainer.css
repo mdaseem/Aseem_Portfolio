@@ -2,10 +2,11 @@
   display: flex;
   flex-direction: row;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 767px) {
   .project-container-main-content {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 }
