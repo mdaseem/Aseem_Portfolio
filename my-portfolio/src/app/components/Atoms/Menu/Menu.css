@@ -1,6 +1,7 @@
 .header-content {
   display: flex;
   flex-direction: row;
+  text-color: black;
 }
 
 .header-title {

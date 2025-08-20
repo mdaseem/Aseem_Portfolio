@@ -1,6 +1,8 @@
+'use client';
 import React from "react";
 import "./ProjectsContainer.css";
 import ProjectTile from "../../Atoms/ProjectTiles/ProjectTile";
+import FadeIn from "../../HOC/FadeIn/FadeIn";
 
 const dataForTiles = [
   {
@@ -20,17 +22,52 @@ const dataForTiles = [
     description:
       "I have worked on a Udemy clone using React and Node.js, express, and MongoDB.",
   },
+
+
+
+   {
+    id: 4,
+    title: "Udemy Clone",
+    description:
+      "I have worked on a Udemy clone using React and Node.js, express, and MongoDB.",
+  },
+   {
+    id: 5,
+    title: "Udemy Clone",
+    description:
+      "I have worked on a Udemy clone using React and Node.js, express, and MongoDB.",
+  },
+   {
+    id: 6,
+    title: "Udemy Clone",
+    description:
+      "I have worked on a Udemy clone using React and Node.js, express, and MongoDB.",
+  },
+   {
+    id: 7,
+    title: "Udemy Clone",
+    description:
+      "I have worked on a Udemy clone using React and Node.js, express, and MongoDB.",
+  },
+   {
+    id: 8,
+    title: "Udemy Clone",
+    description:
+      "I have worked on a Udemy clone using React and Node.js, express, and MongoDB.",
+  },
 ];
 
 const ProjectContainer: React.FC = () => {
   return (
     <div className="project-container-main-content">
       {dataForTiles.map((tile) => (
-        <ProjectTile
-          key={tile.id}
-          title={tile.title}
-          description={tile.description}
-        />
+        <FadeIn key={tile.id} delay={`${tile.id * 0.2}s`}>
+          <ProjectTile
+            key={tile.id}
+            title={tile.title}
+            description={tile.description}
+          />
+        </FadeIn>
       ))}
     </div>
   );
