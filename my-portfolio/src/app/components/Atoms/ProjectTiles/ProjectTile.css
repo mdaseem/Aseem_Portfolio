@@ -3,6 +3,7 @@
   background: #e3f2fd; /* light blue background */
     transition: background 0.3s, box-shadow 0.3s;
     border-radius: 22px;
+    max-width: 22em;
 }
 
 .project-tile-main-content {
@@ -32,5 +33,6 @@
 @media (max-width: 767px) {
   .project-tile {
     flex-basis: 100%;
+    max-width: 100%;
   }
 }
