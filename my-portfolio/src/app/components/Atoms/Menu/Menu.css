@@ -75,9 +75,10 @@
   }
   .menu-content.visible {
     transform: translateX(0);
+    z-index: 1;
     opacity: 1;
     pointer-events: auto;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15), 0 8px 40px rgba(0, 0, 0, 0.10);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15), 0 8px 40px rgba(0, 0, 0, 0.1);
   }
   .menu-links {
     flex: 1;
