@@ -61,7 +61,7 @@ const ProjectContainer: React.FC = () => {
   return (
     <div className="project-container-main-content">
       {dataForTiles.map((tile) => (
-        <FadeIn key={tile.id} delay={`${tile.id * 0.2}s`}>
+        <FadeIn key={tile.id} delay={`${tile.id * 0.1}s`}>
           <ProjectTile
             key={tile.id}
             title={tile.title}
