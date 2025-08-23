@@ -3,15 +3,16 @@ import React from "react";
 import "./Menu.css";
 import Link from "next/link";
 
-// interface MenuProps {
+interface MenuProps {
+  children?: React.ReactNode;
+}
 
-// }
-
-const Menu: React.FC = () => {
+const Menu: React.FC<MenuProps> = (props: MenuProps) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
     <div className="hamburger-menu-container">
+      {props.children}
       <button
         className={`menu-button ${isMenuOpen ? "open" : ""}`}
         onClick={() => setIsMenuOpen(true)}
@@ -19,8 +20,8 @@ const Menu: React.FC = () => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 48 48"
-          width="48px"
-          height="48px"
+          width="26px"
+          height="26px"
           className="menu-icon"
         >
           <linearGradient
@@ -84,8 +85,8 @@ const Menu: React.FC = () => {
         </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="48px"
-          height="48px"
+          width="28px"
+          height="28px"
           viewBox="0 0 24 24"
           fill="none"
           className="close-icon"

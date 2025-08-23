@@ -21,8 +21,9 @@ export default function ThisIsPortfolioHome() {
         image="https://aseem-portfolio.vercel.app/My_Image1.JPG"
       />
       <div className="page-view">
-        <Menu />
-        <h1 className="header-title-mobile">{`My Portfolio`}</h1>
+        <Menu>
+          <h1 className="header-title-mobile">{`My Portfolio`}</h1>
+        </Menu>
         <Header />
         <div className="profile-image-container">
           <Image
