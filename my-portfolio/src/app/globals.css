@@ -67,13 +67,16 @@ body {
       opacity: 1;
     }
   }
+  .profile-image-container {
+    margin-top: 2em;
+  }
   .header-title-mobile {
     display: block;
     font-weight: 700;
     color: white;
   }
   .page-view {
-    padding: 1em 1em;
+    padding: 0 10px;
     display: flex;
     background-color: #010624;
     flex-direction: column;
@@ -91,6 +94,7 @@ body {
   }
   .name-title {
     top: 2em;
+    font-size: x-large;
     border-radius: 22px;
     padding: 4em 0;
     width: 93%;
