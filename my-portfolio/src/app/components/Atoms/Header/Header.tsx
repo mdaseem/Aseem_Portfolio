@@ -9,9 +9,9 @@ const Header: React.FC = () => {
         <h1 className="header-title">{`My Portfolio`}</h1>
         <nav className="header-nav">
           <Link href="/" className="header-link">{`Home`}</Link>
-          <Link href="/Projects" className="header-link">{`Projects`}</Link>
-          <Link href="/About" className="header-link">{`About`}</Link>
-          <Link href="/contact" className="header-link">{`Contact`}</Link>
+          <Link href="#" className="header-link">{`Projects`}</Link>
+          <Link href="#" className="header-link">{`About`}</Link>
+          <Link href="#" className="header-link">{`Contact`}</Link>
         </nav>
       </div>
     </header>
