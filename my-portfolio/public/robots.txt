@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://aseem-portfolio.vercel.app
+
+# Sitemaps
+Sitemap: https://aseem-portfolio.vercel.app/sitemap.xml

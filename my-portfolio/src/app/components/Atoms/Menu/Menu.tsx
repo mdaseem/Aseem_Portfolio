@@ -13,7 +13,7 @@ const Menu: React.FC<MenuProps> = (props: MenuProps) => {
   return (
     <div className="hamburger-menu-container">
       {props.children}
-      <button
+      {!isMenuOpen?(<button
         className={`menu-button ${isMenuOpen ? "open" : ""}`}
         onClick={() => setIsMenuOpen(true)}
       >
@@ -70,20 +70,34 @@ const Menu: React.FC<MenuProps> = (props: MenuProps) => {
             d="M43,39H5c-1.1,0-2-0.9-2-2v-2c0-1.1,0.9-2,2-2h38c1.1,0,2,0.9,2,2v2C45,38.1,44.1,39,43,39z"
           />
         </svg>
-      </button>
+      </button>):(<svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="36px"
+          height="36px"
+          viewBox="0 0 24 24"
+          fill="none"
+          className="close-icon"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          <path
+            //   className="close-menu"
+            d="M6.99486 7.00636C6.60433 7.39689 6.60433 8.03005 6.99486 8.42058L10.58 12.0057L6.99486 15.5909C6.60433 15.9814 6.60433 16.6146 6.99486 17.0051C7.38538 17.3956 8.01855 17.3956 8.40907 17.0051L11.9942 13.4199L15.5794 17.0051C15.9699 17.3956 16.6031 17.3956 16.9936 17.0051C17.3841 16.6146 17.3841 15.9814 16.9936 15.5909L13.4084 12.0057L16.9936 8.42059C17.3841 8.03007 17.3841 7.3969 16.9936 7.00638C16.603 6.61585 15.9699 6.61585 15.5794 7.00638L11.9942 10.5915L8.40907 7.00636C8.01855 6.61584 7.38538 6.61584 6.99486 7.00636Z"
+            fill="#3bc9f3"
+          />
+        </svg>)}
 
       <div className={`menu-content ${isMenuOpen ? "visible" : ""}`}>
         <div className="menu-links">
           <div className="header-content">
             <nav className="header-nav">
               <Link href="/" className="header-link">{`Home`}</Link>
-              <Link href="/Projects" className="header-link">{`Projects`}</Link>
-              <Link href="/About" className="header-link">{`About`}</Link>
-              <Link href="/contact" className="header-link">{`Contact`}</Link>
+              <Link href="#" className="header-link">{`Projects`}</Link>
+              <Link href="#" className="header-link">{`About`}</Link>
+              <Link href="#" className="header-link">{`Contact`}</Link>
             </nav>
           </div>
         </div>
-        <svg
+        {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           width="28px"
           height="28px"
@@ -97,7 +111,7 @@ const Menu: React.FC<MenuProps> = (props: MenuProps) => {
             d="M6.99486 7.00636C6.60433 7.39689 6.60433 8.03005 6.99486 8.42058L10.58 12.0057L6.99486 15.5909C6.60433 15.9814 6.60433 16.6146 6.99486 17.0051C7.38538 17.3956 8.01855 17.3956 8.40907 17.0051L11.9942 13.4199L15.5794 17.0051C15.9699 17.3956 16.6031 17.3956 16.9936 17.0051C17.3841 16.6146 17.3841 15.9814 16.9936 15.5909L13.4084 12.0057L16.9936 8.42059C17.3841 8.03007 17.3841 7.3969 16.9936 7.00638C16.603 6.61585 15.9699 6.61585 15.5794 7.00638L11.9942 10.5915L8.40907 7.00636C8.01855 6.61584 7.38538 6.61584 6.99486 7.00636Z"
             fill="#0F0F0F"
           />
-        </svg>
+        </svg> */}
       </div>
     </div>
   );
