@@ -29,7 +29,6 @@ const SEO = ({ title, description, keywords, image, url }: SEOProps) => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       {image && <meta name="twitter:image" content={image} />}
-      <meta name="google-site-verification" content="aIyeKUmJv-EDNMHrWZfSzYiZxf4QQzoHOGNnspR1Lag" />
     </Head>
   );
 };
