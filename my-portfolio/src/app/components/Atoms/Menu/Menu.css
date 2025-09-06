@@ -1,7 +1,7 @@
 .header-content {
   display: flex;
   flex-direction: row;
-  text-color: black;
+  color: black;
 }
 
 .header-title {
@@ -88,6 +88,10 @@
   }
   .menu-links {
     flex: 1;
+  }
+
+  .header-link {
+    color: black !important;
   }
 
   .close-icon {

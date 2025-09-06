@@ -6,6 +6,8 @@ import Header from "./components/Atoms/Header/Header";
 import Main from "./components/Main/Main";
 import ProjectContainer from "./components/Molecules/ProjectsContainer/ProjectContainer";
 import SEO from "./components/SEO/SEO";
+import Resume from "./components/Atoms/Resume/Resume";
+import FadeIn from "./components/HOC/FadeIn/FadeIn";
 
 export default function ThisIsPortfolioHome() {
   return (
@@ -16,7 +18,7 @@ export default function ThisIsPortfolioHome() {
         keywords="portfolio, next.js, typescript, web developer,
          front-end developer,
          javascript, react, web design, web development,
-         UI/UX design, Node.js, graphql, web applications,front end engineer, software engineer, Mohammed Aseem"
+         UI/UX design, Node.js, graphql, web applications,front end engineer, software engineer, Mohammed Aseem,Front End Developer Specializing in React & JavaScript"
         url="https://aseem-portfolio.vercel.app/Projects"
         image="https://aseem-portfolio.vercel.app/My_Image1.JPG"
       />
@@ -37,6 +39,11 @@ export default function ThisIsPortfolioHome() {
         <div className="name-title">Mohammed Aseem</div>
         <Main>
           <ProjectContainer />
+          <FadeIn delay={`${0.1}s`}>
+            <section id="resume">
+              <Resume />
+            </section>
+          </FadeIn>
         </Main>
       </div>
     </>

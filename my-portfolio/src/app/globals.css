@@ -49,6 +49,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2em;
+  background-color: #010624;
+  color: white;
 }
 
 .profile-image {
