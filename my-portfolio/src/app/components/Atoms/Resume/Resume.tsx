@@ -1,15 +1,18 @@
-import React from 'react'
-import './Resume.css'
-import Link from 'next/link'
+"use client";
+import React from "react";
+import "./Resume.css";
 
 const Resume = () => {
   return (
     <div className="resume-container">
-      <Link className='download-link' href="Aseem_Updated-Resume.pdf" download={'Aseem_Updated-Resume.pdf'} target="_blank" rel="noopener noreferrer">
+      <button
+        onClick={() => (window.location.href = "Aseem_Updated-Resume.pdf")}
+        className="download-link"
+      >
         Download my Resume
-      </Link>
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default Resume
+export default Resume;
