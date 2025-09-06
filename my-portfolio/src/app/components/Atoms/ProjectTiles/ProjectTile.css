@@ -13,7 +13,7 @@
 }
 
 .project-tile:hover {
-    background: #bbdefb; /* slightly darker blue on hover */
+    background: #1591d8; /* slightly darker blue on hover */
     box-shadow: 0 4px 16px rgba(33, 150, 243, 0.15);
 }
 

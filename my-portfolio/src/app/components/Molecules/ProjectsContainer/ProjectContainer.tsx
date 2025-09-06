@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import "./ProjectsContainer.css";
 import ProjectTile from "../../Atoms/ProjectTiles/ProjectTile";
@@ -23,33 +23,31 @@ const dataForTiles = [
       "I have worked on a Udemy clone using React and Node.js, express, and MongoDB.",
   },
 
-
-
-   {
+  {
     id: 4,
     title: "Udemy Clone",
     description:
       "I have worked on a Udemy clone using React and Node.js, express, and MongoDB.",
   },
-   {
+  {
     id: 5,
     title: "Udemy Clone",
     description:
       "I have worked on a Udemy clone using React and Node.js, express, and MongoDB.",
   },
-   {
+  {
     id: 6,
     title: "Udemy Clone",
     description:
       "I have worked on a Udemy clone using React and Node.js, express, and MongoDB.",
   },
-   {
+  {
     id: 7,
     title: "Udemy Clone",
     description:
       "I have worked on a Udemy clone using React and Node.js, express, and MongoDB.",
   },
-   {
+  {
     id: 8,
     title: "Udemy Clone",
     description:
@@ -59,9 +57,9 @@ const dataForTiles = [
 
 const ProjectContainer: React.FC = () => {
   return (
-    <div className="project-container-main-content">
+    <section className="project-container-main-content">
       {dataForTiles.map((tile) => (
-        <FadeIn key={tile.id} delay={`${tile.id * 0.1}s`}>
+        <FadeIn key={tile.id} delay={`${0.1}s`}>
           <ProjectTile
             key={tile.id}
             title={tile.title}
@@ -69,7 +67,7 @@ const ProjectContainer: React.FC = () => {
           />
         </FadeIn>
       ))}
-    </div>
+    </section>
   );
 };
 
