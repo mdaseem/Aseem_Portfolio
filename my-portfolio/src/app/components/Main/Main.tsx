@@ -8,7 +8,11 @@ interface MainProps {
 const Main: React.FC<MainProps> = (props) => {
   return (
     <div>
-      <main className="main-content">{props.children}</main>
+      <main className="main-content"><>
+      {/* <iframe id="projectFrame" src="https://go-renovate.vercel.app/" height={"100"}></iframe> */}
+      {props.children}
+      </>
+      </main>
     </div>
   );
 };

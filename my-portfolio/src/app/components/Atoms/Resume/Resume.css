@@ -1,11 +1,10 @@
 .resume-container {
     padding: 2rem;
-    /* background-color: #3e47be;
-    border: 1px solid #3e47be; */
     border-radius: 8px;
     color: white;
     text-align: center;
     border: 1px solid #8c8989;
+    font-weight: 600;
 }
 
 .download-link:hover { 

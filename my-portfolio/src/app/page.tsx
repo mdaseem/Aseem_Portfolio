@@ -13,7 +13,7 @@ export default function ThisIsPortfolioHome() {
   return (
     <>
       <SEO
-        title="My Portfolio | Mohammed Aseem | Front-end Developer"
+        title="Mohammed Aseem | Front-end Developer"
         description="Welcome to my portfolio. I build web apps using TypeScript, Next.js, and more."
         keywords="portfolio, next.js, typescript, web developer,
          front-end developer,
@@ -24,7 +24,7 @@ export default function ThisIsPortfolioHome() {
       />
       <div className="page-view">
         <Menu>
-          <h1 className="header-title-mobile">{`My Portfolio`}</h1>
+          {""}
         </Menu>
         <Header />
         <div className="profile-image-container">

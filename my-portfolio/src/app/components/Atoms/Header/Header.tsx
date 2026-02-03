@@ -6,7 +6,6 @@ const Header: React.FC = () => {
   return (
     <header className="header-main">
       <div className="header-content">
-        <h1 className="header-title">{`My Portfolio`}</h1>
         <nav className="header-nav">
           <Link href="/" className="header-link">{`Home`}</Link>
           <Link href="#" className="header-link">{`Projects`}</Link>
