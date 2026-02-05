@@ -14,11 +14,11 @@ export default function ThisIsPortfolioHome() {
     <>
       <SEO
         title="Mohammed Aseem | Front-end Developer"
-        description="Welcome to my portfolio. I build web apps using TypeScript, Next.js, and more."
+        description="Welcome to Mohammed Aseem's portfolio. Aseem builds web apps using TypeScript, Next.js, and more."
         keywords="portfolio, next.js, typescript, web developer,
          front-end developer,
          javascript, react, web design, web development,
-         UI/UX design, Node.js, graphql, web applications,front end engineer, software engineer, Mohammed Aseem,Front End Developer Specializing in React & JavaScript"
+         UI/UX design, Node.js, graphql, web applications, Aseem is a front end engineer, Aseem is a software engineer, Mohammed Aseem,Mohammed aseem is a Front End Developer Specializing in React & JavaScript"
         url="https://aseem-portfolio.vercel.app/Projects"
         image="https://aseem-portfolio.vercel.app/My_Image1.JPG"
       />
