@@ -8,7 +8,10 @@ interface MainProps {
 const Main: React.FC<MainProps> = (props) => {
   return (
     <div>
-      <main className="main-content">{props.children}</main>
+      <main className="main-content"><>
+      {props.children}
+      </>
+      </main>
     </div>
   );
 };
