@@ -1,6 +1,5 @@
 .project-tile {
   border: 1px solid #eee;
-  background: #e3f2fd; /* light blue background */
     transition: background 0.3s, box-shadow 0.3s;
     border-radius: 22px;
     max-width: 22em;
@@ -13,7 +12,6 @@
 }
 
 .project-tile:hover {
-    background: #1591d8; /* slightly darker blue on hover */
     box-shadow: 0 4px 16px rgba(33, 150, 243, 0.15);
 }
 

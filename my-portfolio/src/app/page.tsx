@@ -23,9 +23,7 @@ export default function ThisIsPortfolioHome() {
         image="https://aseem-portfolio.vercel.app/My_Image1.JPG"
       />
       <div className="page-view">
-        <Menu>
-          {""}
-        </Menu>
+        <Menu>{""}</Menu>
         <Header />
         <div className="profile-image-container">
           <Image
