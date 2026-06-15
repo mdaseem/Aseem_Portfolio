@@ -1,12 +1,9 @@
 import React from "react";
-import "./globals.css";
 import Main from "./components/Main/Main";
 import SEO from "./components/SEO/SEO";
-import Resume from "./components/Atoms/Resume/Resume";
-import FadeIn from "./components/HOC/FadeIn/FadeIn";
 import PortfolioPage from "./components/Molecules/PortfolioPage/PortfolioPage";
 
-export default function ThisIsPortfolioHome() {
+export default async function ThisIsPortfolioHome() {
   return (
     <>
       <SEO
@@ -22,11 +19,6 @@ export default function ThisIsPortfolioHome() {
       <div className="page-view">
         <Main>
           <PortfolioPage />
-          <FadeIn delay={`${0.1}s`}>
-            <section id="resume">
-              <Resume />
-            </section>
-          </FadeIn>
         </Main>
       </div>
     </>
