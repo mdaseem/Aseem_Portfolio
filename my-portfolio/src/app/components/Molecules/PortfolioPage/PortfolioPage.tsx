@@ -14,18 +14,14 @@ export default function PortfolioPage() {
     <>
       <NavBar />
       <main>
-        <FadeIn delay={`${0.1}s`}>
-          <HeroSection />
-        </FadeIn>
+        <HeroSection />
         <FadeIn delay={`${0.1}s`}>
           <AboutSection />
         </FadeIn>
         <FadeIn delay={`${0.1}s`}>
           <SkillsSection />
         </FadeIn>
-        <FadeIn delay={`${0.1}s`}>
-          <ProjectsSection />
-        </FadeIn>
+        <ProjectsSection />
         <FadeIn delay={`${0.1}s`}>
           <ExperienceSection />
         </FadeIn>
