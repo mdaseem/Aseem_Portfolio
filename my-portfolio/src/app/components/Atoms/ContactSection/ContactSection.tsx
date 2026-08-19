@@ -6,7 +6,7 @@ const LINKS = [
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/mohammed-aseem-652076190",
   },
-  { label: "Resume", href: "/Aseem_Updated-Resume.pdf" },
+  { label: "Resume", href: "/Mohammed_Aseem_Resume_Latest.docx" },
 ];
 
 export default function ContactSection() {

@@ -6,7 +6,7 @@ const Resume = () => {
   return (
     <div className="resume-container">
       <button
-        onClick={() => (window.location.href = "Aseem_Updated-Resume.pdf")}
+        onClick={() => (window.location.href = "Mohammed_Aseem_Resume_Latest.docx")}
         className="download-link"
       >
         Download my Resume

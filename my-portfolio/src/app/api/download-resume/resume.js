@@ -9,7 +9,7 @@ export async function GET() {
   const response = new NextResponse(fileBuffer);
 
   response.headers.set("Content-Type", "application/pdf");
-  response.headers.set("Content-Disposition", 'attachment; filename="Aseem_Updated-Resume.pdf"');
+  response.headers.set("Content-Disposition", 'attachment; filename="Mohammed_Aseem_Resume_Latest.docx"');
 
   return response;
 }
